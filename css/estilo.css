@@ -1,0 +1,333 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    
+}
+
+.phone-section {
+    background-color: #ED3237; 
+    padding: 5px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.phone-number{
+    color: #fff;
+    display: inline; 
+    margin-right: 200px; 
+}
+
+.white-layout {
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    
+}
+
+.saiba-mais-link {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 40px;
+    background-color: #ED3237;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #ED3237; 
+    transition: background-color 0.3s; 
+  }
+  
+  .saiba-mais-link:hover {
+    background-color: white; 
+    border-color: #ED3237; 
+    color: #ED3237; 
+  }
+
+.logo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: 220px;
+}
+
+.top-nav {
+    position: absolute;
+    top: 40px; 
+    left: 950px; 
+    background-color: #fff;
+    padding: 10px;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav li {
+    display: inline;
+    margin: 0 10px;
+    position: relative;
+}
+
+.top-nav a {
+    color: #4e4e4e;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.top-nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ED3237;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.top-nav a:hover::after {
+    width: 100%;
+}
+
+
+.slider img {
+    width: 100%;
+    max-height: 400px;
+    height: auto;
+}
+
+.slider {
+    max-width: 1100px; 
+    margin: 0 auto; 
+}
+
+ .test-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.test-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    color: #ED3237;
+}
+
+.test-text p:first-of-type {
+    margin-bottom: 10px; 
+}
+
+.test-text ul {
+    margin-top: 10px; 
+}
+
+.test-icon {
+    width: 300px; 
+    height: 300px; 
+    margin-right: 210px; 
+}
+
+.test-text {
+    margin-left: 200px;
+}
+
+.test-image {
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.galeria {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    margin-left: 220px;
+    color: #ED3237;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.image-item {
+    flex: 1; 
+    text-align: center;
+    margin: 0px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.image-item img {
+   width: 220px; 
+    height: 220px;
+}
+
+
+.image-item p {
+    margin: 10px 0;
+}
+
+.spacer {
+    height: 70px; 
+}
+
+
+.footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.footer li {
+    display: inline;
+    margin: 0 10px; 
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer p {
+    font-weight: bold;
+}
+
+
+.image-item .saiba-mais-link {
+    color: #000; 
+    text-decoration: none; 
+}
+
+
+@media (max-width: 768px) {
+    .phone-section {
+        background-color: #ED3237;
+        display: flex;
+        align-items: center;
+        padding: 5px 20px;
+        position: relative;
+    }
+
+    .phone-number {
+        color: #fff;
+        display: inline;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .phone-logo {
+        width: 30px;
+        height: 30px;
+        background: url('/img/logo.jpg') no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 20px;
+    }
+
+    .top-nav {
+        position: relative;
+        top: auto;
+        left: auto;
+        text-align: center; 
+    }
+
+    .top-nav ul {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .top-nav li {
+        margin: 0 10px;
+    }
+
+    .white-layout {
+        height: auto;
+    }
+
+
+    .slider img {
+        max-height: 200px;
+    }
+
+    .test-section {
+        display: block; 
+        text-align: center; 
+    }
+
+    .test-text {
+        margin-left: 0;
+    }
+
+    .test-title {
+        margin: 0; 
+    }
+
+    .test-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-gallery {
+        display: block; 
+    }
+
+    .image-item {
+        text-align: center; 
+    }
+
+    .image-item img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0; 
+    }
+
+    .galeria {
+        text-align: center;
+        margin-left: 0;
+    }
+}
